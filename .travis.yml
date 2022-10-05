@@ -1,0 +1,14 @@
+language: node_js
+sudo: required
+node_js:
+- node
+install:
+- npm install -g --unsafe-perm node-red
+- npm install
+before_script:
+- node --version
+- npm --version
+after_success: npm run coverage
+env:
+  global:
+  - NODE_ENV=test

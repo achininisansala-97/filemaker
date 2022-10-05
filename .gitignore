@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.nyc_output
+.env
+/user
+!assets/placeholder.json
+assets/*
+*.log
+/dapi
+/coverage
+/clients
